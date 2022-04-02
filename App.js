@@ -1,11 +1,11 @@
-import { StatusBar } from 'expo-status-bar';
+// import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Bless this days oh Lord </Text>
-      <StatusBar style="auto" />
+      <Text>Jolayemi Yusuf First React Native Project</Text>
+      {/* <StatusBar style="auto" /> */}
     </View>
   );
 }
