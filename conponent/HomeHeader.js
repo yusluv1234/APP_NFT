@@ -1,12 +1,12 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 
-const NFTCard = () => {
+const HomeHeader = () => {
   return (
     <View>
-      <Text>NFTCard</Text>
+      <Text>HomeHeader</Text>
     </View>
   )
 }
 
-export default NFTCard
+export default HomeHeader;
