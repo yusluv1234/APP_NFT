@@ -1,6 +1,6 @@
 import React from 'react'
 import { Text, View } from 'react-native'
-import { SIZES } from '../constants'
+import { assets, SIZES } from '../constants'
 
 export const NTFTitle = () => {
   return (
@@ -28,8 +28,10 @@ export const ImageCmp = () => {
 
 export const People = () => {
   return (
-    <View>
-      <Text>People</Text>
+    <View style={{ flexDirection: 'row' }}>
+      {[assets.person02, assets.person03, assets.person04].map((imgUrl, index) =>(
+        <ImageCmp />
+      ))}
     </View>
   )
 }
@@ -51,7 +53,8 @@ export const SubInfo = () => {
       flexDirection: 'row',
       justifyContent: 'space-between',
     }} >
-      <Text>SubInfo</Text>
+     <People />
+     <EndDate />
     </View>
   )
 }
